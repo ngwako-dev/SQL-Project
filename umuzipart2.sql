@@ -8,4 +8,4 @@
    WHERE id=1
 
 4. UPDATE customers SET firstname='Lerato',lastname='Mabitso'
-   WHERE id=1 
+   where id=1 
