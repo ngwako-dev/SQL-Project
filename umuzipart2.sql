@@ -1,4 +1,4 @@
-1. SELECT * FROM "Customers Table";
+1. SELECT * FROM "Customers Table"
 
 2. SELECT "FirstName"
    FROM "Customers Table";
