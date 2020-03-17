@@ -9,7 +9,7 @@ CREATE TABLE "Customers Table" (
     "City" VARCHAR(20) NOT NULL,
     "Country" VARCHAR(200) NOT NULL,
     PRIMARY KEY ("CustomerId")
-);
+)
 
 INSERT INTO "Customers Table" ("CustomerId","FirstName","LastName","Gender","Address","Phone","Email","City","Country") VALUES
 (1,'John','Hibert','Male','284 chaucer st','084789657','john@gmail.com','Johannesburg', 'South Africa'),
