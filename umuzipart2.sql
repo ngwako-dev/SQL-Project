@@ -1,70 +1,70 @@
-1. SELECT * FROM "Customers Table"
+1. SELECT * FROM Customers
 
-2. SELECT "FirstName"
-   FROM "Customers Table";
+2. SELECT firstname
+   FROM  customers;
 
-3. SELECT "FirstName"
-   FROM "Customers Table"
-   WHERE "CustomerId"=1;
+3. SELECT firstname
+   FROM customers
+   WHERE customerid=1;
 
-4. UPDATE "Customers Table" SET "FirstName"='Lerato',"LastName"='Mabitso'
-   WHERE "CustomerId"=1;
+4. UPDATE customers SET firstname='Lerato',lastname='Mabitso'
+   WHERE  customerid=1;
 
-5. DELETE FROM "Customers Table" WHERE "CustomerId"=2;
+5. DELETE FROM  customers WHERE customerid=2;
 
-6. SELECT DISTINCT ("Status")
-   FROM "Orders Table";
+6. SELECT DISTINCT (status)
+   FROM  orders;
 
-   SELECT COUNT (DISTINCT "Status")
-   FROM "Orders Table";
+   SELECT COUNT (DISTINCT status)
+   FROM orders;
 
-7. SELECT MAX("Amount") FROM "Payments Table";
+7. SELECT MAX(amount) FROM payments;
 
-8. SELECT * FROM "Customers Table"
-   ORDER BY "Country";
+8. SELECT * FROM customers
+   ORDER BY country;
 
-9. SELECT * FROM "Products Table"
-   WHERE "BuyPrice" BETWEEN 100 AND 600;
+9. SELECT * FROM products
+   WHERE  buyPrice BETWEEN 100 AND 600;
 
-10. SELECT * FROM "Customers Table"
-    WHERE "Country"='Germany' AND "City"='Berlin';
+10. SELECT * FROM  customers
+    WHERE  country='Germany' AND city='Berlin';
 
-11. SELECT * FROM "Customers Table"
-    WHERE "City"='Cape Town' OR "City"='Durban';
+11. SELECT * FROM  customers
+    WHERE  city='Cape Town' OR city='Durban';
 
-12. SELECT * FROM "Products Table"
-    WHERE "BuyPrice" >500;
+12. SELECT * FROM  products
+    WHERE buyprice >500;
 
-13. SELECT SUM("Amount")
-    FROM "Payments Table";
+13. SELECT SUM(amount)
+    FROM  payments;
 
-14. SELECT COUNT("Status")
-    FROM "Orders Table"
-    WHERE "Status"='Shipped'
+14. SELECT COUNT(status)
+    FROM  orders
+    WHERE status='Shipped'
 
-15. SELECT AVG("BuyPrice")
-    FROM "Products Table";
+15. SELECT AVG(buyprice)
+    FROM  products;
 
-    SELECT AVG("BuyPrice"/12)
-    FROM "Products Table"
+    SELECT AVG(buyprice/12)
+    FROM  products
 
 16. SELECT
-    "Customers Table"."CustomerId",
-    "FirstName",
-    "LastName",
-    "Gender",
-    "Address",
-    "Phone",
-    "Email",
-    "City",
-    "Country"
+     customers.customerid,
+     firstname,
+     lastname,
+     gender,
+     address,
+     phone,
+     email,
+     city,
+     country
     FROM
-   "Customers Table"
-   INNER JOIN "Payments Table" ON "Payments Table"."CustomerId" = "Customers Table"."CustomerId"
+    customers
+   INNER JOIN payments ON payments.customerid = customers.customerid
    ORDER BY
-   "Customers Table"."CustomerId";
+    customers.customerid;
 
 
-17. SELECT "ProductName"
-    FROM "Products Table"
-    WHERE "Description"='Turnable front wheels, steering function';
+17. SELECT productname
+    FROM  products
+    WHERE  description='Turnable front wheels, steering function';
